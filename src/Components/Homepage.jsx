@@ -6,8 +6,10 @@ import Header from "./Header.jsx";
 
 function HomePage() {
 return(
-<div>
+<div className="home-page-main-div">
+<div className="home-page-hero-div">
 <Header />
+</div>
 </div>
 )
 }

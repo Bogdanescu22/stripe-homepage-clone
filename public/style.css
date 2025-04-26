@@ -5,6 +5,18 @@ display: grid;
 grid-template-columns: 2.5fr 1fr ;
 padding: 20px;
 background-color: transparent;
+font-family: halvetica, sans-serif;
+font-size: 15px;
+font-weight: 600;
+}
+
+.header-navigation-div div{
+cursor: pointer;
+}
+
+.header-main-div img{
+width:95px;
+margin-top: -14px;
 }
 
 .header-navigation-div{
@@ -18,4 +30,11 @@ gap: 43px;
 display: flex;
 flex-direction: row;
 gap: 23px;
+}
+
+.header-buttons-div button{
+    font-family: halvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
 }

@@ -5,7 +5,7 @@ const Header = () => {
   return (
    <div className="header-main-div">
   <div className="header-navigation-div">
-    <div>Stripe</div>
+    <div><img src="src/assets/stripe-ar21.svg"></img></div>
     <div>Products</div>
     <div>Solutions</div>
     <div>Developers</div>
