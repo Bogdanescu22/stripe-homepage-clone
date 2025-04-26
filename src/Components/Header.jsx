@@ -12,6 +12,10 @@ const Header = () => {
     <div>Resources</div>
     <div>Pricing</div>
   </div>
+  <div className='header-buttons-div'>
+    <div><button>Sign In</button></div>
+    <div><button>Contact Sales</button></div>
+  </div>
   <div className="header-buttons-div"></div>
    </div>
   );

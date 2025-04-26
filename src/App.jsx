@@ -1,4 +1,4 @@
-import HomePage from "./UserComponents/HomePage";
+import HomePage from "./Components/Homepage.jsx";
 import { BrowserRouter as Router, Route, Routes,} from "react-router-dom";
 
 
