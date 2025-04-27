@@ -8,6 +8,7 @@ background-color: transparent;
 font-family: halvetica, sans-serif;
 font-size: 15px;
 font-weight: 600;
+z-index: 1000;
 }
 
 .header-navigation-div div{
@@ -37,4 +38,121 @@ gap: 23px;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
+}
+
+
+/* Home Page */
+
+.home-page-hero-div{
+width: 100%;
+display:grid;
+}
+
+.home-page-hero-text-iamge-div{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.home-page-hero-text-iamge-div h1{
+font-family: halvetica, sans-serif;
+font-size: 90px;
+}
+
+.contain-main-div{
+padding-left: 130px;
+padding-right: 130px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+
+/* Containerul de tip grid */
+
+/* Coloanele din grid, cu border punctat gri */
+
+/* Containerul cu grid */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Patru coloane egale */
+  gap: 0px; /* Spațiu între coloane */
+  position: relative;
+}
+
+/* Coloanele individuale cu bordură */
+.grid-item {
+  border: 1px dashed #E0E0E0; 
+  padding: 10px;
+  text-align: center;
+  position: relative; /* Asigură-te că fiecare element are poziționare relativă */
+  height: 100vh;
+  z-index: 4;
+}
+
+/* Textul care va ocupa două coloane */
+.hero-text-item {
+  top: 0; 
+  left: 0; 
+  z-index: 10; 
+  background-color: transparent; 
+  padding: 20px;
+  box-sizing: border-box; 
+  border: none;
+  right: 0;
+  padding-right: 0px;
+  position: absolute;
+}
+
+.hero-p-item{
+  z-index: 1; 
+  background-color: transparent; 
+  padding: 20px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  border: none;
+}
+
+
+.hero-p-item p{
+  font-family: halvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #425466;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+
+.hero-text-item h1 {
+z-index: 100;
+font-size: 86px;
+font-family: halvetica, sans-serif;
+letter-spacing: -1px;
+padding-right: 16px;
+}
+
+.div12{
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* Două coloane egale */
+position: relative;}
+
+.div12 div{
+border: 1px dashed #E0E0E0;
+
+}
+
+.div34{
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* Două coloane egale */
+}
+
+.div34 div{
+border: 1px dashed #E0E0E0;
+}
+
+.div12 .hero-text-item{
+margin-right: 0px;
+}
+
+.grid-item {
+padding: 0px;
 }
