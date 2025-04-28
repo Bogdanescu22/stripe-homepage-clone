@@ -1,14 +1,20 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
 /* Header */
 
 .header-main-div{
 display: grid;
 grid-template-columns: 2.5fr 1fr ;
-padding: 20px;
+padding: 20px 0px;
 background-color: transparent;
 font-family: halvetica, sans-serif;
 font-size: 15px;
 font-weight: 600;
 z-index: 1000;
+width:1080px !important;
 }
 
 .header-navigation-div div{
@@ -25,6 +31,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 gap: 43px;
+padding-right: 220px ;
 }
 
 .header-buttons-div{
@@ -43,116 +50,66 @@ gap: 23px;
 
 /* Home Page */
 
-.home-page-hero-div{
-width: 100%;
-display:grid;
-}
-
-.home-page-hero-text-iamge-div{
-display: grid;
-grid-template-columns: 1fr 1fr;
-}
-
-.home-page-hero-text-iamge-div h1{
-font-family: halvetica, sans-serif;
-font-size: 90px;
+.home-page-main-div{
+padding: 20px 80px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .contain-main-div{
-padding-left: 130px;
-padding-right: 130px;
-margin-top: 0px;
-margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-/* Containerul de tip grid */
-
-/* Coloanele din grid, cu border punctat gri */
 
 /* Containerul cu grid */
 main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Patru coloane egale */
-  gap: 0px; /* Spațiu între coloane */
-  position: relative;
+width: 1080px;
+display: flex;
+flex-direction: row;
+height: 100vh;
+
 }
 
-/* Coloanele individuale cu bordură */
-.grid-item {
-  border: 1px dashed #E0E0E0; 
-  padding: 10px;
-  text-align: center;
-  position: relative; /* Asigură-te că fiecare element are poziționare relativă */
-  height: 100vh;
-  z-index: 4;
+.grid-div{
+width: 270px;
+border: 1px dashed red;
 }
 
-/* Textul care va ocupa două coloane */
-.hero-text-item {
-  top: 0; 
-  left: 0; 
-  z-index: 10; 
-  background-color: transparent; 
-  padding: 20px;
-  box-sizing: border-box; 
-  border: none;
-  right: 0;
-  padding-right: 0px;
-  position: absolute;
+h1{
+font-size: 90px;
+width: 600px;
 }
 
-.hero-p-item{
-  z-index: 1; 
-  background-color: transparent; 
-  padding: 20px;
-  box-sizing: border-box;
-  padding-left: 20px;
-  border: none;
+.div2{
+border-left: 0px; 
+border-right: 1px dashed red;
 }
 
+.div1{
+border-left: 1px solid red;
+border-right: 1px dashed red;
+}
 
-.hero-p-item p{
-  font-family: halvetica, sans-serif;
+.div4{
+border-right:1px solid red;
+border-left: 0px 
+}
+
+.div3{
+border-left: 0px 
+}
+
+p{
   font-size: 18px;
-  font-weight: 400;
+  width: 500px;
   color: #425466;
-  margin-top: -10px;
-  margin-bottom: -10px;
-}
+  line-height: 29px;
+  font-weight: semibold;
+  position: relative;
+  }
+  ;
 
-
-.hero-text-item h1 {
-z-index: 100;
-font-size: 86px;
-font-family: halvetica, sans-serif;
-letter-spacing: -1px;
-padding-right: 16px;
-}
-
-.div12{
-display: grid;
-grid-template-columns: repeat(2, 1fr); /* Două coloane egale */
-position: relative;}
-
-.div12 div{
-border: 1px dashed #E0E0E0;
-
-}
-
-.div34{
-display: grid;
-grid-template-columns: repeat(2, 1fr); /* Două coloane egale */
-}
-
-.div34 div{
-border: 1px dashed #E0E0E0;
-}
-
-.div12 .hero-text-item{
-margin-right: 0px;
-}
-
-.grid-item {
-padding: 0px;
-}
