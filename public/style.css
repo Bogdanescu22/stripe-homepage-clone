@@ -82,6 +82,7 @@ border: 1px dashed red;
 h1{
 font-size: 90px;
 width: 600px;
+position: relative;
 }
 
 .div2{
@@ -110,6 +111,7 @@ p{
   line-height: 29px;
   font-weight: semibold;
   position: relative;
+  z-index: 1;
   }
   ;
 
