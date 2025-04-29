@@ -6,15 +6,15 @@ const Header = () => {
    <div className="header-main-div">
   <div className="header-navigation-div">
     <div><img src="src/assets/stripe-ar21.svg"></img></div>
-    <div>Products</div>
-    <div>Solutions</div>
-    <div>Developers</div>
-    <div>Resources</div>
-    <div>Pricing</div>
+    <div><p>Products</p></div>
+    <div><p>Solutions</p></div>
+    <div><p>Developers</p></div>
+    <div><p>Resources</p></div>
+    <div><p>Pricing</p></div>
   </div>
   <div className='header-buttons-div'>
-    <div><button>Sign In</button></div>
-    <div><button>Contact Sales</button></div>
+    <div><p>Sign In</p></div>
+    <div className='contact-sales-button'><p>Contact Sales</p></div>
   </div>
   <div className="header-buttons-div"></div>
    </div>
