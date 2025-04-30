@@ -170,7 +170,39 @@ body{
   
 
     /*Phone component and graphic*/
-    .phone-component-main-div{
-    display:flex;
-    flex-direction: row;
+
+
+    .separator{
+
+    display: flex ;
+    align-items: center;
+    text-align: center
+    }
+
+    .separator::before, .separator::after{
+    content: "";
+    flex:1;
+    border-bottom: 1px solid #000
+    }
+
+    .separator:not(:empty)::before{
+      margin-right: .25em;
+    }
+
+    .separator:not(:empty)::after{
+      margin-left: .25em;
+    }
+
+
+    .phone-screen-apple-button img{
+    width: 80px ;
+    }
+
+    .phone-component-main-div * {
+    z-index: 10000000;
+    }
+
+    .phone-component-main-div {
+    background-color: white;
+    z-index: 100000000000;
     }

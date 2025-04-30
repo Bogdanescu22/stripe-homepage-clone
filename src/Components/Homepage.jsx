@@ -2,6 +2,7 @@
 
 import React, { useRef, useEffect } from 'react';
 import Header from './Header';
+import PhoneComponent from './PhoneComponent';
 
 function HomePage() {
   const canvasRef = useRef(null);
@@ -40,7 +41,7 @@ function HomePage() {
           </div>
           <div className="grid-div div2"></div>
           <div className="grid-div div3"></div>
-          <div className="grid-div div4"></div>
+          <div className="grid-div div4"><PhoneComponent /></div>
         </main>
       </div>
     </div>

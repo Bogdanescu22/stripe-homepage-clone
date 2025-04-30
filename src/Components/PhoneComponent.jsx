@@ -15,8 +15,22 @@ return(
     </div>
     <div>
        <div className='separator'>Or pay with card</div> 
+       <p>Email</p>
+       <div></div>
+       <p>Card Information</p>
+       <div className='phone-screen-pay-card-div1'><div>Numeber</div><div><img></img><img></img></div></div>
+       <div className="phone-screen-pay-card-div1">
+        <div>MM/YY</div>
+        <div>CVC
+          <div><img></img></div>
+        </div>
+        <p>Country or region</p>
+        <div>United states</div>
+        <div>ZIP</div>
+        <div className='phone-screen-pay-button'>Pay</div>
+       </div>
     </div>
-
+     
 
    </div>
 
