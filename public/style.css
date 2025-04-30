@@ -1,176 +1,176 @@
 body{
-font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* Header */
-
-.header-main-div{
-display: grid;
-grid-template-columns: 2.5fr 1fr ;
-padding: 20px 0px;
-background-color: transparent;
-font-family: halvetica, sans-serif;
-font-size: 15px;
-font-weight: 600;
-z-index: 1000;
-width:1080px !important;
-padding-top:0px;
-}
-
-
-
-.header-navigation-div p{
-color: white;
-margin-top: 0px;
-}
-
-.header-buttons-div p{
-color: white;
-margin-top: 0px
-}
-
-
-
-
-
-
-
-.contact-sales-button {
-  background-color: white; /* Fundal alb pentru div-ul care înconjoară textul */
-  padding: 10px;
-  border: 2px solid white; /* Margine albă */
-  position: relative;
-}
-
-.contact-sales-button p {
-  background-color: transparent; /* Fundal transparent pentru text */
-  padding: 0;
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-  mask-image: linear-gradient(white, white); /* Creăm o mască complet transparentă */
-  -webkit-mask-image: linear-gradient(white, white); /* Compatibilitate cu Webkit pentru browsere mai vechi */
-}
-
-
-
-
-
-
-
-
-
-
-.header-navigation-div p:hover{
-opacity: 0.6;
-}
-
-.header-main-div img{
-width:95px;
-margin-top: -14px;
-}
-
-.header-navigation-div{
-display: flex;
-flex-direction: row;
-justify-content: center;
-gap: 43px;
-padding-right: 220px ;
-}
-
-.header-buttons-div{
-display: flex;
-flex-direction: row;
-gap: 23px;
-}
-
-.header-buttons-div button{
-    font-family: halvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-
-/* Home Page */
-
-.home-page-main-div{
-padding: 20px 80px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-.contain-main-div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* Containerul cu grid */
-main {
-width: 1080px;
-display: flex;
-flex-direction: row;
-height: 100vh;
-
-}
-
-.grid-div{
-width: 270px;
-border: 1px dashed red;
-}
-
-h1{
-font-size: 90px;
-width: 600px;
-position: relative;
-z-index: 10;
-color: rgba(0, 0, 0, 0.521);
-mix-blend-mode: color-burn;
-letter-spacing: -4.3px;
-}
-
-.div2{
-border-left: 0px; 
-border-right: 1px dashed red;
-}
-
-.div1{
-border-left: 1px solid red;
-border-right: 1px dashed red;
-}
-
-.div4{
-border-right:1px solid red;
-border-left: 0px 
-}
-
-.div3{
-border-left: 0px 
-}
-
-.hero-description{
-  font-size: 18px;
-  width: 500px;
-  color: #425466;
-  line-height: 29px;
-  font-weight: semibold;
-  position: relative;
-  z-index: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
   }
   
-
-  .hero-background-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    pointer-events: none; /* Nu blochează click-uri sau selectări */
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    z-index:1;
-
+  
+  /* Header */
+  
+  .header-main-div{
+  display: grid;
+  grid-template-columns: 2.5fr 1fr ;
+  padding: 20px 0px;
+  background-color: transparent;
+  font-family: halvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  z-index: 1000;
+  width:1080px !important;
+  padding-top:0px;
   }
+  
+  
+  
+  .header-navigation-div p{
+  color: white;
+  margin-top: 0px;
+  }
+  
+  .header-buttons-div p{
+  color: white;
+  margin-top: 0px
+  }
+  
+  
+  .header-navigation-div p:hover{
+  opacity: 0.6;
+  }
+  
+  .header-main-div img{
+  width:95px;
+  margin-top: -14px;
+  }
+  
+  .header-navigation-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 43px;
+  padding-right: 220px ;
+  }
+  
+  .header-buttons-div{
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  }
+  
+  .header-buttons-div button{
+      font-family: halvetica, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+  }
+  
+  
+  
+  .contact-sales-button {
+    position: relative;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    background: none;
+    mix-blend-mode: screen;
+    cursor: pointer;
+  }
+  
+  .contact-sales-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: white;
+    border-radius: 0.4em;
+    mix-blend-mode: color-burn;
+  }
+  
+  
+  
+  /* Home Page */
+  
+  .home-page-main-div{
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .contain-main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* Containerul cu grid */
+  main {
+  width: 1080px;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  
+  }
+  
+  .grid-div{
+  width: 270px;
+  border: 1px dashed red;
+  }
+  
+  h1{
+  font-size: 90px;
+  width: 600px;
+  position: relative;
+  z-index: 10;
+  color: rgba(0, 0, 0, 0.521);
+  mix-blend-mode: color-burn;
+  letter-spacing: -4.3px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  }
+  
+  .div2{
+  border-left: 0px; 
+  border-right: 1px dashed red;
+  }
+  
+  .div1{
+  border-left: 1px solid red;
+  border-right: 1px dashed red;
+  }
+  
+  .div4{
+  border-right:1px solid red;
+  border-left: 0px 
+  }
+  
+  .div3{
+  border-left: 0px 
+  }
+  
+  .hero-description{
+    font-size: 18px;
+    width: 500px;
+    color: #425466;
+    line-height: 29px;
+    font-weight: semibold;
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+    }
+    
+  
+    .hero-background-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none; /* Nu blochează click-uri sau selectări */
+      clip-path: polygon(0 0, 100% 0, 100% 43%, 0 93%);
+    }
+  
+
+    /*Phone component and graphic*/
+    .phone-component-main-div{
+    display:flex;
+    flex-direction: row;
+    }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buton cu text transparent</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* Fundalul - canvas sau orice altceva */
+    .background {
+      background: linear-gradient(45deg, red, orange, purple);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 0 ;
+    }
+
+    .button {
+      position: relative;
+      padding: 1em 2em;
+      font-size: 2em;
+      font-weight: bold;
+      border: none;
+      background: none;
+      color: black;
+      mix-blend-mode: screen;
+      cursor: pointer;
+    }
+
+    .button::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: white;
+      border-radius: 0.5em;
+      mix-blend-mode: color-burn;
+      z-index: -1;
+    }
+
+    .div1 p{
+    text-align: center;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="background">
+    <button class="button">Vezi prin mine</button>
+  </div>
+  <div className="div1"><p>Text</p></div>
+</body>
+</html>
